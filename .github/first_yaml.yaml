@@ -1,8 +1,11 @@
+name: First Action - Single
+
 on:
   workflow_dispatch:
 
 jobs:
-  say_hello:
+  hello-world:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello there!"
+    - name: Fist Step
+      run: echo "Hello World"
